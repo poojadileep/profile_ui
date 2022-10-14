@@ -42,9 +42,7 @@ class MyApp extends StatelessWidget {
             decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage('images/bg.jpeg'), fit: BoxFit.cover)),
-            // height: double.infinity,
-            //width: double.infinity,
-            //color: Colors.white,
+           
             child: Center(
                 child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
