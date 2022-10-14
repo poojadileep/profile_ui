@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
           ],
-          backgroundColor: Colors.white,
+          backgroundColor: Color.fromARGB(255, 150, 183, 211),
           leading: Padding(
             padding: const EdgeInsets.only(left: 30),
             child: IconButton(
@@ -39,9 +39,12 @@ class MyApp extends StatelessWidget {
           ),
         ),
         body: Container(
-            height: double.infinity,
-            width: double.infinity,
-            color: Colors.white,
+            decoration: const BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('images/bg.jpeg'), fit: BoxFit.cover)),
+            // height: double.infinity,
+            //width: double.infinity,
+            //color: Colors.white,
             child: Center(
                 child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -53,14 +56,14 @@ class MyApp extends StatelessWidget {
                 const Text(
                   'Nicole Concessao',
                   style: TextStyle(
-                      color: Color.fromARGB(255, 119, 21, 54),
+                      color: Color.fromARGB(255, 92, 11, 38),
                       fontFamily: 'Satisfy',
                       fontSize: 45),
                 ),
                 const Text(
                   'Indian Dancer',
                   style: TextStyle(
-                    color: Colors.blueGrey,
+                    color: Color.fromARGB(255, 9, 71, 102),
                     fontFamily: 'BebasNeue',
                     fontSize: 30,
                     letterSpacing: 3.5,
@@ -73,12 +76,18 @@ class MyApp extends StatelessWidget {
                 const Text(
                   'Dancer | Choreographer | Teacher ',
                   style: TextStyle(
-                      color: Colors.black, fontFamily: 'Mukta', fontSize: 20),
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      fontFamily: 'Mukta',
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20),
                 ),
                 const Text(
                   'Cofounder of Team Naach dance company',
                   style: TextStyle(
-                      color: Colors.black, fontFamily: 'Mukta', fontSize: 20),
+                      color: Colors.black,
+                      fontFamily: 'Mukta',
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20),
                 ),
                 // ignore: prefer_const_constructors
                 SizedBox(
@@ -190,7 +199,7 @@ class MyApp extends StatelessWidget {
                 const Text(
                   'Contact',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 150, 58, 89),
+                    color: Color.fromARGB(255, 99, 34, 56),
                     fontFamily: 'Mukta',
                     fontSize: 50,
                     letterSpacing: 3.5,
@@ -211,7 +220,7 @@ class MyApp extends StatelessWidget {
                       children: [
                         Image.asset(
                           'images/t.png',
-                          height: 40,
+                          height: 50,
                         ),
                       ],
                     ),
@@ -222,7 +231,7 @@ class MyApp extends StatelessWidget {
                       children: [
                         Image.asset(
                           'images/m.png',
-                          height: 30,
+                          height: 55,
                         )
                       ],
                     ),
@@ -233,7 +242,7 @@ class MyApp extends StatelessWidget {
                       children: [
                         Image.asset(
                           'images/f.png',
-                          height: 35,
+                          height: 52,
                         ),
                       ],
                     )
